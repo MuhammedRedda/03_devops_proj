@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_DIR="/home/ec2-user/myapp"
+APP_DIR="/home/ec2-user/myapp/03_devops_proj"
 PROD_DIR="/usr/share/nginx/html/index.html"
 #DEV_DIR="/home/ec2-user/dev"
 
