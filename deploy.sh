@@ -2,7 +2,7 @@
 
 APP_DIR="/home/ec2-user/myapp"
 PROD_DIR="/usr/share/nginx/html/index.html"
-DEV_DIR="/home/ec2-user/dev"
+#DEV_DIR="/home/ec2-user/dev"
 
 cd $APP_DIR || exit
 
@@ -20,7 +20,7 @@ if [ "$BRANCH" = "main" ]; then
 
 elif [ "$BRANCH" = "develop" ]; then
 	git pull origin develop
-	rm -rf $DEV_DIR
+	#rm -rf $DEV_DIR
 	cp index.html $PROD_DIR
 	echo "Development Deployed"
 else 
