@@ -14,13 +14,13 @@ echo "Deploying branch: $BRANCH"
 
 if [ "$BRANCH" = "main" ]; then
 	git pull origin main 
-	rm -rf $PROD_DIR
-	cp index.html $PROD_DIR
+	sudo rm -rf $PROD_DIR
+	sudo cp index.html $PROD_DIR
 	echo "Production Deployed"
 elif [ "$BRANCH" = "develop" ]; then
 	git pull origin develop
 	#rm -rf $DEV_DIR
-	cp index.html $PROD_DIR
+	sudo cp index.html $PROD_DIR
 	echo "Development Deployed"
 else 
 	echo "No deploy for this bransh"
