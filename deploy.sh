@@ -18,7 +18,7 @@ if [ "$BRANSH" = "main" ]; then
 				cp index.html $PROD_DIR
 					echo "Production Deployed"
 
-				elif [ "$BRANSH" = "develop"]; then
+				elif [ "$BRANSH" = "develop" ]; then
 						git pull origin develop
 							rm -rf $DEV_DIR
 								CP index.html $PROD_DIR
